@@ -64,7 +64,6 @@ def test_movie_dict_dict():
 
 
 
-    3/3 tests passed
 
 
 
@@ -98,7 +97,6 @@ print(durations_df)
 
 
 ```python
-%%nose
 
 def test_pandas_loaded():
     assert 'pd' in globals(), \
@@ -121,7 +119,6 @@ def test_netflix_df_df():
 
 
 
-    2/2 tests passed
 
 
 
@@ -213,7 +210,6 @@ def test_title():
 
 
 
-    5/5 tests passed
 
 
 
@@ -295,7 +291,6 @@ def test_print():
 
 
 
-    2/2 tests passed
 
 
 
@@ -433,7 +428,6 @@ def test_print():
 
 
 
-    3/3 tests passed
 
 
 
@@ -506,7 +500,6 @@ def test_title():
 
 
 
-    4/4 tests passed
 
 
 
@@ -721,8 +714,6 @@ short_movies.head(20)
 
 
 ```python
-%%nose
-# %%nose needs to be included at the beginning of every @tests cell
 
 last_input = In[-2]
 
@@ -755,7 +746,6 @@ def test_print():
 
 
 
-    2/2 tests passed
 
 
 
@@ -800,7 +790,6 @@ print(*colors[:10],sep='\n')
 
 
 ```python
-%%nose
 # Define an empty list
 colors_test = []
 
@@ -826,7 +815,6 @@ def test_colors_list():
 
 
 
-    1/1 tests passed
 
 
 
@@ -858,7 +846,6 @@ plt.show()
 
 
 ```python
-%%nose
 import numpy as np
 
 x_axis_data = netflix_movies_col_subset["release_year"].values
@@ -917,7 +904,6 @@ def test_labels():
 
 
 
-    5/5 tests passed
 
 
 
@@ -935,9 +921,7 @@ are_movies_getting_shorter = "maybe"
 
 
 ```python
-%%nose
 import re
-# %%nose needs to be included at the beginning of every @tests cell
 
 def test_example():
     assert not re.match(are_movies_getting_shorter, "yes", re.IGNORECASE),\
@@ -950,8 +934,6 @@ def test_example():
 
 
 
-
-    1/1 tests passed
 
 
 
